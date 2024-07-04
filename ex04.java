@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Dice {
 
@@ -13,9 +14,16 @@ public class Dice {
         System.out.println("Die 2 : "+dice2);
         System.out.println("Total : "+sum);
     }
-
+    public void whatYourName() {
+        Scanner scannner = new Scanner(System.in);
+        System.out.println("あなたの名前は何ですか？");
+        String name = scannner.next();
+        System.out.println("こんにちは！"+ name +"さん");
+    }
     public static void main(String[] args) {
         Dice diceGame = new Dice();
+        Dice yourName = new Dice();
+        yourName.whatYourName();
         diceGame.playDiceGame();
     }
 }
