@@ -12,6 +12,11 @@ public class Dice {
         System.out.println("Die 1 : "+dice1);
         System.out.println("Die 2 : "+dice2);
         System.out.println("Total : "+sum);
+        if (sum >= 7) {
+            System.out.println("You won!");
+        } else {
+            System.out.println("You lost!");
+        }
     }
 
     public static void main(String[] args) {
